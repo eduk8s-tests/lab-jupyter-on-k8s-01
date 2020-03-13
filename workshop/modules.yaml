@@ -5,8 +5,8 @@ modules:
     verify-environment:
         name: Verify Environment
         exit_sign: Start Workshop
-    exercises/01-using-containers:
-        name: Using Containers
+    exercises/01-running-locally:
+        name: Running Locally
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

@@ -4,5 +4,5 @@ modules:
     activate:
     - workshop-overview
     - verify-environment
-    - exercises/01-using-containers
+    - exercises/01-running-locally
     - workshop-summary
