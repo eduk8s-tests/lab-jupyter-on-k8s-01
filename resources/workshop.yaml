@@ -15,7 +15,7 @@ spec:
       console:
         enabled: true
       terminal:
-        enabled:
+        enabled: true
         layout: split
     ingresses:
     - name: 8888
