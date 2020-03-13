@@ -18,7 +18,7 @@ spec:
         enabled: true
         layout: split
     ingresses:
-    - name: "8888"
+    - name: local-8888
       port: 8888
     env:
     - name: DOWNLOAD_URL
