@@ -1,18 +1,30 @@
 The typical way that Jupyter notebooks would be run is to run them directly on your own local computer. This involves having the Python language interpreter available
 
-```
+```execute
 virtualenv venv
 ```
 
-```
+```execute
 source venv/bin/activate
 ```
 
-```
+```execute
 pip install notebook
 ```
 
+```execute
+jupyter notebook password
 ```
+
+```execute
+eduk8s
+```
+
+```execute
+eduk8s
+```
+
+```execute
 jupyter notebook --ip 127.0.0.1 --port 8888
 ```
 
