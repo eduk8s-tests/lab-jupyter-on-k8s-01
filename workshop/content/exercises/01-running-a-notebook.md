@@ -80,3 +80,5 @@ You will be prompted if you want to shutdown the application so confirm that you
 ```execute
 y
 ```
+
+Note that you will only get 5 seconds to confirm shutdown, so if you aren't quick enough, repeat the process of killing the application.
