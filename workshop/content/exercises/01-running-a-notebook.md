@@ -65,13 +65,17 @@ Because the Jupyter notebook application isn't running on your local computer, y
 
 %ingress_protocol%://%session_namespace%-local-8888.%ingress_domain%/
 
-Clicking on this URL should bring up a new browser window or tab. When you logged into the notebook using the password used above, and verified it is working, come back to these instructions and stop the Jupyter notebook application by killing it with:
+Clicking on this URL should bring up a new browser window or tab. Log into the notebook using the password supplied above. You should see the file browser view of the Jupyter notebook application.
+
+![Jupyter Notebook Classic Interface](notebook-classic.png)
+
+Once you have verified the notebook application is working come back to these instructions and kill the Jupyter notebook application using:
 
 ```execute
 <ctrl-c>
 ```
 
-You will be prompted if you want to shutdown the application, so confirm that you do using:
+You will be prompted if you want to shutdown the application so confirm that you do using:
 
 ```execute
 y
