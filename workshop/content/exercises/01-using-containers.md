@@ -25,7 +25,7 @@ eduk8s
 ```
 
 ```execute
-jupyter notebook --ip 127.0.0.1 --port 8888
+jupyter notebook --ip 0.0.0.0 --port 8888
 ```
 
 %ingress_protocol%://%session_namespace%-local-8888.%ingress_domain%/
@@ -43,7 +43,7 @@ pip install jupyterlab
 ```
 
 ```execute
-jupyter lab --ip 127.0.0.1 --port 8888
+jupyter lab --ip 0.0.0.0 --port 8888
 ```
 
 %ingress_protocol%://%session_namespace%-local-8888.%ingress_domain%/
