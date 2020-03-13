@@ -4,5 +4,6 @@ modules:
     activate:
     - workshop-overview
     - verify-environment
-    - exercises/01-running-locally
+    - exercises/01-running-a-notebook
+    - exercices/02-running-jupyterlab
     - workshop-summary
