@@ -16,4 +16,4 @@ pip install notebook
 jupyter notebook --ip 127.0.0.1 --port 8888
 ```
 
-%ingress-protocol%://%session_namespace%-local-8888/
+%ingress_protocol%://%session_namespace%-local-8888/
