@@ -5,5 +5,5 @@ modules:
     - workshop-overview
     - verify-environment
     - exercises/01-running-a-notebook
-    - exercices/02-running-jupyterlab
+    - exercises/02-running-jupyterlab
     - workshop-summary
