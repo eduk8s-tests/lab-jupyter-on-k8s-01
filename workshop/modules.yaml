@@ -9,6 +9,8 @@ modules:
         name: Running a Notebook
     exercises/02-running-jupyterlab:
         name: Running JupyterLab
+    exercises/03-using-containers:
+        name: Using Containers
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

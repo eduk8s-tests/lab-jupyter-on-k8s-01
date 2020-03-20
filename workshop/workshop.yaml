@@ -6,4 +6,5 @@ modules:
     - verify-environment
     - exercises/01-running-a-notebook
     - exercises/02-running-jupyterlab
+    - exercises/03-using-containers
     - workshop-summary
