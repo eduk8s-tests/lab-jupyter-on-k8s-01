@@ -11,6 +11,8 @@ modules:
         name: Running JupyterLab
     exercises/03-using-containers:
         name: Using Containers
+    exercises/04-using-kubernetes:
+        name: Using Kubernetes
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
