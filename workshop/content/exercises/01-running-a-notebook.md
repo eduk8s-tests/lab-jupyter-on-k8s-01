@@ -61,13 +61,13 @@ jupyter notebook --ip 0.0.0.0
 
 Note that because this workshop environment is running in Kubernetes, the argument ``--ip 0.0.0.0`` has been supplied. This is so the Jupyter notebook application can be accessed from outside of the Kubernetes cluster. If you ran the Jupyter notebook application on your own local computer you would not use this option, and instead let it default to using an IP for connections of ``127.0.0.1``. When ``127.0.0.1`` is used, it ensures that it is only accessible to you on your own local computer and not anyone else.
 
-Because the Jupyter notebook application isn't running on your local computer, you will in this case need to use the following URL to access it.
+If you were running this command on your own local computer, your web browser would be automatically opened on the Jupyter notebook for you. As we are running the Jupyter notebook application in this hosted workshop environment, you will instead need to use the following URL to access it.
 
 %ingress_protocol%://%session_namespace%-local-8888.%ingress_domain%/
 
-Clicking on this URL should bring up a new browser window or tab. Log into the notebook using the password supplied above. You should see the file browser view of the Jupyter notebook application.
+Clicking on this URL should bring up a new browser window or tab. Log into the notebook using the password supplied above. You should see the file browser view of the Jupyter notebook application. The files and sub directories in the directory where you started the Jupyter notebook application will be visible.
 
-![Jupyter Notebook Classic Interface](notebook-classic.png)
+![Classic Interface](notebook-classic.png)
 
 Once you have verified the notebook application is working come back to these instructions and kill the Jupyter notebook application using:
 
