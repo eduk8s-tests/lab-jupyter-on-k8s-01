@@ -15,7 +15,7 @@ spec:
       console:
         enabled: true
       terminal:
-        enabled: false
+        enabled: true
         layout: split
     ingresses:
     - name: local-8888
