@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: notebook
+  labels:
+    app: notebook
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      deployment: notebook
+  template:
+    metadata:
+      labels:
+        deployment: notebook
+    spec:
+      containers:
+      - name: workshop
+        image: jupyter/minimal-notebook:latest
+        ports:
+        - name: 8888-tcp
+          containerPort: 8888
+          protocol: TCP
+        resources:
+          limits:
+            memory: 512Mi
+          requests:
+            memory: 512Mi
