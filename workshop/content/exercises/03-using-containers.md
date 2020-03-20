@@ -25,7 +25,7 @@ The standard notebook image is ``jupyter/minimal-notebook``. It includes the Jup
 
 The other notebooks include other language kernels, or have a range of additional Python packages pre-installed in the image to save you needing to install them yourself.
 
-In this workshop environment we can't use ``docker`` or ``podman`` to directly run these images in a container, but the process would involving running the following command:
+In this workshop environment we can't use ``docker`` or ``podman`` to directly run these images in a container, but the process would involve running the following command:
 
 ```
 $ docker run -p 8888:8888 jupyter/minimal-notebook
@@ -53,7 +53,7 @@ With the container running, to access the Jupyter notebook instance, you would u
 
 When the Jupyter notebook interface comes up in the browser you will not need to log in, as the token given as argument in the URL acts as a secret access token.
 
-One issue with running Jupyter notebooks in containers is that what files you have access to is only whatever was built into the container image. In order to work on your own notebook files, you would need to need to upload them via the Jupyter notebook web interface. When they are uploaded, they are though only stored within the temporary file system of the container. This means that when the container is stopped, you will loose any changes you may have made to them.
+One issue with running Jupyter notebooks in containers is that what files you have access to is only whatever was built into the container image. In order to work on your own notebook files, you would need to upload them via the Jupyter notebook web interface. When they are uploaded, they are though only stored within the temporary file system of the container. This means that when the container is stopped, you will loose any changes you may have made to them.
 
 The alternative to uploading the notebook files is to use the ability of the container runtime to mount in a volume from your local computer into the running container. If this is done, you will be able to see any notebook files in the directory you mounted from the local computer, and changes will also be saved back to your local computer file system.
 
