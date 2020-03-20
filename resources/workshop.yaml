@@ -7,7 +7,7 @@ spec:
   title: "Jupyter on Kubernetes #1"
   description: A workshop on deploying Jupyter notebooks to Kubernetes
   url: https://github.com/eduk8s-tests/lab-jupyter-on-k8s-01
-  image: quay.io/eduk8s/workshop-dashboard:master
+  content: github.com/eduk8s-tests/lab-jupyter-on-k8s-01
   duration: 30m
   session:
     budget: large
@@ -15,11 +15,8 @@ spec:
       console:
         enabled: true
       terminal:
-        enabled: true
+        enabled: false
         layout: split
     ingresses:
     - name: local-8888
       port: 8888
-    env:
-    - name: DOWNLOAD_URL
-      value: github.com/eduk8s-tests/lab-jupyter-on-k8s-01
