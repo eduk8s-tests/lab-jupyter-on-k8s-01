@@ -6,4 +6,14 @@ In evaluating whether Kubernetes is suitable as a platform for hosting Jupyter n
 
 The first problem, of how to package up the Jupyter notebook application, is actually already solved for us. This is because Kubernetes is a platform for running applications in containers. So long as you have a container image built to the Open Container Initiative (OCI) image specification, it can be hosted on Kubernetes. All those container images we saw previously from the Jupyter project satisfy this requirement.
 
-The next step is therefore to work out how we tell Kubernetes to run the container image for the Jupyter notebook application, and expose it so that it can be accessed from our web browser. 
+The next step is therefore to work out how we tell Kubernetes to run the container image for the Jupyter notebook application, and expose it so that it can be accessed from our web browser.
+
+When doing any task with Kubernetes, rather than running a set of imperative commands to tell it what to do, you instead provide a declarative description of what you want the final result to look like. So rather than tell it to run this container, you declare how the deployment should look. It is then the job of Kubernetes to work out what to do to satisfy the required end state.
+
+Configuration of Kubernetes is therefore performed by creating a set of resource definitions which describe what you want. These are provided as YAML definitions (but can also be JSON).
+
+In the case of wanting to deploy our Jupyter notebook application, we have to provide three resource definitions. These resources are:
+
+* **Deployment** - A description of the application deployment we want to create and the container image to use.
+* **Service** - A description of how the application should be made available within the Kubernetes cluster.
+* **Ingress** - A description of how the application service should be exposed outside of the Kubernetes cluster, and made accessible using a URL in your web browser.
