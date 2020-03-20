@@ -8,4 +8,5 @@ modules:
     - exercises/02-running-jupyterlab
     - exercises/03-using-containers
     - exercises/04-using-kubernetes
+    - exercises/05-deploying-an-image
     - workshop-summary

@@ -13,6 +13,8 @@ modules:
         name: Using Containers
     exercises/04-using-kubernetes:
         name: Using Kubernetes
+    exercises/05-deploying-an-image:
+        name: Deploying an Image
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
