@@ -40,7 +40,7 @@ This will prompt you to enter the password and then confirm it. Enter:
 eduk8s
 ```
 
-and then again enter:
+and then to verify it, again enter:
 
 ```execute
 eduk8s
