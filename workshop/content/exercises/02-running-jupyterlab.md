@@ -18,7 +18,7 @@ Click on the URL again to bring up the JupyterLab interface.
 
 You shouldn't be asked to log in this time, but only because we are using the same URL and the new process has inherited the session cookie file that was previously written when we ran it previously with the classic interface.
 
-![JupyterLab Interface]
+![JupyterLab Interface](notebook-jupyterlab.png)
 
 You will see that JupyterLab provides an all in one interface where Jupyter notebooks are opened in the same page. In the classic interface, Jupyter notebooks were always opened in a new browser window or tab.
 
