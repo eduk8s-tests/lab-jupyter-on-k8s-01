@@ -57,4 +57,10 @@ deployment.apps/notebook created
 
 This indicates that the resource definition was accepted. Kubernetes will now go about the task of pulling down the container image to the cluster if necessary, creating a container for the image, and running the Jupyter notebook application bundled within the image.
 
-If this is the first time the container image is being used in the Kubernetes cluster, because the Jupyter notebook images can be quite large, this may take some time. As a result, the deployment may take some time to complete the first time. 
+To monitor the deployment so you know when it has completed, run:
+
+```execute
+kubectl rollout status deployment/notebook
+```
+
+If this is the first time the container image is being used in the Kubernetes cluster, because the Jupyter notebook images can be quite large, it may take some time to pull down the image and deploy it.
