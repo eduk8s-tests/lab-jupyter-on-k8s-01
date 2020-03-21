@@ -15,6 +15,8 @@ modules:
         name: Using Kubernetes
     exercises/05-deploying-an-image:
         name: Deploying an Image
+    exercises/06-port-forwarding:
+        name: Port Forwarding
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
