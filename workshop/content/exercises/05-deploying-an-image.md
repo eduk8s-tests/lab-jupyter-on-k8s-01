@@ -3,7 +3,7 @@ The Jupyter notebook application image we want to deploy is the ``jupyter/minima
 To see the definition of this resource, run:
 
 ```execute
-cat notebook/deployment.yaml
+cat notebook-v1/deployment.yaml
 ```
 
 This should yield:
@@ -46,7 +46,7 @@ In short, it says to run the required container image, giving it 512Mi of memory
 To load this resource definition into Kubernetes, run the command:
 
 ```execute
-kubectl apply -f notebook/deployment.yaml
+kubectl apply -f notebook-v1/deployment.yaml
 ```
 
 The output should be:
