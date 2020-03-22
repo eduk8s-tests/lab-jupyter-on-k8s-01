@@ -125,5 +125,5 @@ When completed, access the notebook using the URL for the ingress route.
 This time you should be presented with a simple login prompt. As the password, enter:
 
 ```copy
-eduk8s
-````
+jupyter
+```

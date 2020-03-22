@@ -37,13 +37,13 @@ jupyter notebook password
 This will prompt you to enter the password and then confirm it. Enter:
 
 ```execute
-eduk8s
+jupyter
 ```
 
 and then to verify it, again enter:
 
 ```execute
-eduk8s
+jupyter
 ```
 
 This will update the file ``.jupyter/jupyter_notebook_config.json`` with a hash of the credentials. You can view the contents of the file by running:
