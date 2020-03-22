@@ -86,7 +86,7 @@ pod/notebook-5474d74498-vd7jx   1/1     Running   0          30s
 
 The ``ReplicaSet`` resource is created as a side effect of the ``Deployment`` resource being created, where the ``Deployment`` acts as a template for it. The ``Pod`` resource is then created to satisfy the criteria for the deployment specified by the ``ReplicaSet``. It is a pod which represents a single instance of the deployed application running in a container.
 
-If we query the pod once more, but request additional details, by running:
+If we query just the pod, but request additional details by running:
 
 ```execute
 kubectl get pods -o wide

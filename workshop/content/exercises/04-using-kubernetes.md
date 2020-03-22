@@ -12,8 +12,4 @@ When doing any task with Kubernetes, rather than running a set of imperative com
 
 Configuration of Kubernetes is therefore performed by creating a set of resource definitions which describe what you want. These are provided as YAML definitions (but can also be JSON).
 
-In the case of wanting to deploy our Jupyter notebook application, we have to provide three resource definitions. These resources are:
-
-* **Deployment** - A description of the application deployment we want to create and the container image to use.
-* **Service** - A description of how the application should be made available within the Kubernetes cluster.
-* **Ingress** - A description of how the application service should be exposed outside of the Kubernetes cluster, and made accessible using a URL in your web browser.
+In the case of wanting to deploy our Jupyter notebook application, we first need to look at creating a **Deployment** resource. This is a description of the application deployment we want to create and the container image to use.
