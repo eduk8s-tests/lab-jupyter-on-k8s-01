@@ -41,7 +41,7 @@ spec:
             memory: 512Mi
         env:
         - name: JUPYTER_ENABLE_LAB
-          value: true
+          value: "true"
 ```
 
 In short, it says to run the required container image, giving it 512Mi of memory. Also, that only one instance of the notebook is required.

@@ -97,7 +97,7 @@ spec:
             memory: 512Mi
         env:
         - name: JUPYTER_ENABLE_LAB
-          value: true
+          value: "true"
         volumeMounts:
         - name: config
           mountPath: /home/jovyan/.jupyter
