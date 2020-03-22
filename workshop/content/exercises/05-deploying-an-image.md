@@ -44,7 +44,7 @@ spec:
           value: "true"
 ```
 
-In short, it says to run the required container image, giving it 512Mi of memory. Also, that only one instance of the notebook is required.
+In short, it says to run the required container image giving it 512Mi of memory, and run only one instance of the notebook. The use of the JupyterLab interface has also been enabled.
 
 To load this resource definition into Kubernetes, run the command:
 
