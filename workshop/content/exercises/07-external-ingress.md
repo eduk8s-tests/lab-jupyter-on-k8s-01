@@ -72,7 +72,7 @@ Because we applied all the configuration in the ``notebook-v1`` directory, the c
 
 With the service and ingress created, the Jupyter notebook application can now be accessed without needing to use port forwarding. In this case the URL will be:
 
-%ingress_protocol%://%session_namespace%-local-8888.%ingress_domain%/
+%ingress_protocol%://notebook-%session_namespace%.%ingress_domain%/
 
 If you click on this, you will find though that we still need to be able to retrieve the access token to supply it on the login page. So we still have more work to do to make this more usable. For now, delete the Jupyter notebook application by running:
 
