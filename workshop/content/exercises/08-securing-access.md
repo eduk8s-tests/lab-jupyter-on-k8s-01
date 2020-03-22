@@ -16,7 +16,7 @@ It should be similar to:
 }
 ```
 
-When a container was used for deployment, it was instead necessary to use an access token. The value of this access token wasn't know in advance, and needed to be extracted from the logs for the Jupyter notebook application. Alternatively, you needed to access the container to query the running Jupyter notebook application and list the access token.
+When a container was used for deployment, it was instead necessary to use an access token. The value of this access token wasn't known in advance, and needed to be extracted from the logs for the Jupyter notebook application. Alternatively, you needed to access the container to query the running Jupyter notebook application and list the access token.
 
 One way around the need to do this, is to incorporate the contents of the generated config file ``jupyter_notebook_config.json`` into a Kubernetes resource called a ``ConfigMap``. This resource can then be mounted into the container for the Jupyter notebook application as a file at the required location.
 
