@@ -6,7 +6,7 @@ metadata:
     app: notebook
 spec:
   rules:
-  - host: notebook-$(session_namespace).$(ingress_domain)
+  - host: notebook-${SESSION_NAMESPACE}.${INGRESS_DOMAIN}
     http:
       paths:
       - backend:
