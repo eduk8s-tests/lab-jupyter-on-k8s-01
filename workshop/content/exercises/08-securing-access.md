@@ -127,3 +127,5 @@ This time you should be presented with a simple login prompt. As the password, e
 ```copy
 jupyter
 ```
+
+Still a bit fiddly to setup, but at least we can now access the Jupyter notebook by a URL and use a normal password.
