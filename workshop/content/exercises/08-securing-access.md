@@ -1,4 +1,4 @@
-When the Jupyter notebook application was installed and run locally, it was possible to generate a configuration which contained a hash for a password, with the password then used to access the notebook.
+When the Jupyter notebook application was installed and run locally, it was possible to generate a configuration file which contained a hash for a password, with the password then used to access the notebook.
 
 To view again what this configuration file looked like, run:
 
@@ -95,6 +95,9 @@ spec:
             memory: 512Mi
           requests:
             memory: 512Mi
+        env:
+        - name: JUPYTER_ENABLE_LAB
+          value: true
         volumeMounts:
         - name: config
           mountPath: /home/jovyan/.jupyter

@@ -47,8 +47,6 @@ Executing the command: jupyter notebook
      or http://127.0.0.1:8888/?token=27258442b9c8a08c6d1e1c71258dd190969539853adcc72b
 ```
 
-This will start the classic interface for the Jupyter notebook. If you had wanted to use the JupyterLab interface, you would have provided the additional arguments of ``jupyter lab`` at the end of the ``docker run`` command.
-
 With the container running, to access the Jupyter notebook instance, you would use the last URL listed.
 
 When the Jupyter notebook interface comes up in the browser you will not need to log in, as the token given as argument in the URL acts as a secret access token.
