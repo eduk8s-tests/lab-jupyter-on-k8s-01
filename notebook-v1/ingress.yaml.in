@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: notebook
+  labels:
+    app: notebook
+spec:
+  rules:
+  - host: notebook-$(session_namespace).$(ingress_domain)
+    http:
+      paths:
+      - backend:
+          serviceName: notebook
+          servicePort: 8888
+        path: /

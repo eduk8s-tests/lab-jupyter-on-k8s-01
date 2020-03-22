@@ -17,6 +17,8 @@ modules:
         name: Deploying an Image
     exercises/06-port-forwarding:
         name: Port Forwarding
+    exercises/07-external-ingress
+        name: External Ingress
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

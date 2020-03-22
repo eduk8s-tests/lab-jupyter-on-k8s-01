@@ -10,4 +10,5 @@ modules:
     - exercises/04-using-kubernetes
     - exercises/05-deploying-an-image
     - exercises/06-port-forwarding
+    - exercises/07-external-ingress
     - workshop-summary
