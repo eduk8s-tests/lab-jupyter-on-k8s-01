@@ -21,6 +21,8 @@ modules:
         name: External Ingress
     exercises/08-securing-access:
         name: Securing Access
+    exercises/09-persistent-storage:
+        name: Persistent Storage
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

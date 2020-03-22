@@ -12,4 +12,5 @@ modules:
     - exercises/06-port-forwarding
     - exercises/07-external-ingress
     - exercises/08-securing-access
+    - exercises/09-persistent-storage
     - workshop-summary
