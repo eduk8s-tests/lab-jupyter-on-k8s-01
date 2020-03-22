@@ -11,4 +11,5 @@ modules:
     - exercises/05-deploying-an-image
     - exercises/06-port-forwarding
     - exercises/07-external-ingress
+    - exercises/08-securing-access
     - workshop-summary

@@ -28,3 +28,11 @@ spec:
             memory: 512Mi
           requests:
             memory: 512Mi
+        volumeMounts:
+        - name: config
+          mountPath: /home/jovyan/.jupyter
+      volumes:
+      - name: config
+        configMap:
+          name: notebook
+

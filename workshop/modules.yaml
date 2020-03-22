@@ -19,6 +19,8 @@ modules:
         name: Port Forwarding
     exercises/07-external-ingress:
         name: External Ingress
+    exercises/08-securing-access:
+        name: Securing Access
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

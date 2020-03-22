@@ -28,7 +28,7 @@ spec:
         deployment: notebook
     spec:
       containers:
-      - name: workshop
+      - name: notebook
         image: jupyter/minimal-notebook:latest
         ports:
         - name: 8888-tcp
