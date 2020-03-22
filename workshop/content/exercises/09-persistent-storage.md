@@ -1,0 +1,3 @@
+When running a Jupyter notebook in a container hosted in a remote Kubernetes cluster, it is not possible to mount a local volume from your own computer into the container. The application therefore has no access to your notebook files. You can upload the notebook files and any data, but if the container stops and the application restarted, you will loose your files and any changes.
+
+The best one can do is to mount a persistent volume into the container so that anything you do upload is stored in that volume. This way any work will not be lost when the container is stopped and the application restarted.
