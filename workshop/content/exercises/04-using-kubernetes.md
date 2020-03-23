@@ -12,4 +12,4 @@ When doing any task with Kubernetes, rather than running a set of imperative com
 
 Configuration of Kubernetes is therefore performed by creating a set of resource definitions which describe what you want. These are provided as YAML definitions (but can also be JSON).
 
-In the case of wanting to deploy our Jupyter notebook application, we first need to look at creating a **Deployment** resource. This is a description of the application deployment we want to create and the container image to use.
+In the case of wanting to deploy our Jupyter notebook application, we first need to look at creating a ``Deployment`` resource. This is a description of the application deployment we want to create and the container image to use.

@@ -1,6 +1,6 @@
 To avoid the need to manually set up port forwarding every time you want to access the Jupyter notebook, and allow anyone to access it via a URL as necessary, you need to create Kubernetes ``Service`` and ``Ingress`` resources.
 
-The purpose of the ``Service`` resource is to describe how the application can be accessed within the cluster. The ``Ingress`` describes the how to setup the external ingress router to forward requests via the Jupyter notebook service, including the hostname which will need to be used in the URL.
+The purpose of the ``Service`` resource is to describe how the application can be accessed within the cluster. The ``Ingress`` describes how to setup the external ingress router to forward requests via the Jupyter notebook service, including the hostname which will need to be used in the URL.
 
 To view the details of the service, run:
 
