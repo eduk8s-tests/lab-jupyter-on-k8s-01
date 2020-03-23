@@ -89,7 +89,7 @@ spec:
           claimName: notebook
 ```
 
-A volume definition linked to the persistent volume claim has been added, and the volume then mounted at the directory ``/home/jovyan``.
+A volume definition linked to the persistent volume claim has been added, and the volume then mounted on the directory ``/home/jovyan``.
 
 Because the existing volume mount for the config map conflicted with where the volume for data storage is being mounted, it was necessary to relocate where the config map was mounted. In doing this it was necessary to override the command arguments when the container is started, to reference the configuration from its new location.
 
@@ -122,4 +122,4 @@ This time if you were to upload any notebooks or data files, they will be placed
 
 Do note though, that this only extends to notebooks and data files you upload. If you were to install additional Python packages from the terminal within the Jupyter notebook application, or from a notebook, these packages are stored elsewhere, outside of the persistent volume. So if you had installed extra packages and the container were restarted, you would have reinstall them.
 
-That packages would have to be reinstalled is due to the Python environment in which they are installed being under the directory ``/opt/conda``. It is a much harder exercise to try and persist the existing contents of ``/opt/conda`` to allow updates to also be saved when new packages are installed. This is in part by how Anaconda Python works, but also how the Jupyter project images have been constructed. There is no simple solution to this problem.
+That packages would have to be reinstalled is due to the Python environment in which they are installed being under the directory ``/opt/conda``. It is a much harder exercise to try and persist the existing contents of ``/opt/conda`` to allow updates to also be saved when new packages are installed. This is in part due to how Anaconda Python works, but also how the Jupyter project images have been constructed. There is no simple solution to this problem.
