@@ -41,7 +41,7 @@ spec:
         - name: config
           mountPath: /var/run/jupyter
         - name: data
-          mountPath: /home/jovyan/.jupyter
+          mountPath: /home/jovyan
       volumes:
       - name: config
         configMap:
