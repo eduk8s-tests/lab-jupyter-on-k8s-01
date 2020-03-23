@@ -19,7 +19,7 @@ spec:
       containers:
       - name: notebook
         image: jupyter/minimal-notebook:latest
-        command:
+        args:
         - start-notebook.sh
         - --config
         - /var/run/jupyter/jupyter_notebook_config.py
