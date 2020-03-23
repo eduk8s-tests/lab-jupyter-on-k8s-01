@@ -5,7 +5,7 @@ metadata:
 spec:
   vendor: eduk8s.io
   title: "Jupyter on Kubernetes #1"
-  description: A workshop on deploying Jupyter notebooks to Kubernetes
+  description: A workshop exploring deployment of Jupyter notebooks to Kubernetes
   url: https://github.com/eduk8s-tests/lab-jupyter-on-k8s-01
   content: github.com/eduk8s-tests/lab-jupyter-on-k8s-01
   duration: 30m
