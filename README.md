@@ -18,13 +18,13 @@ Deployment
 To load the workshop definition run:
 
 ```
-kubectl apply -k github.com/eduk8s-tests/lab-jupyter-on-k8s-01
+kubectl apply -k github.com/jupyter-on-kubernetes/lab-jupyter-on-k8s-01
 ```
 
 To deploy a sample training portal which hosts the workshop, run:
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/eduk8s-tests/lab-jupyter-on-k8s-01/master/resources/training-portal.yaml
+kubectl apply -f https://raw.githubusercontent.com/jupyter-on-kubernetes/lab-jupyter-on-k8s-01/master/resources/training-portal.yaml
 ```
 
 Then run:
@@ -43,11 +43,11 @@ Deletion
 To delete the training portal deployment, run:
 
 ```
-kubectl delete -f https://raw.githubusercontent.com/eduk8s-tests/lab-jupyter-on-k8s-01/master/resources/training-portal.yaml
+kubectl delete -f https://raw.githubusercontent.com/jupyter-on-kubernetes/lab-jupyter-on-k8s-01/master/resources/training-portal.yaml
 ```
 
 When you are finished with the workshop definition, you can delete it by running:
 
 ```
-kubectl delete -k github.com/eduk8s-tests/lab-jupyter-on-k8s-01
+kubectl delete -k github.com/jupyter-on-kubernetes/lab-jupyter-on-k8s-01
 ```
