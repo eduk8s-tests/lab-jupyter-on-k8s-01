@@ -49,4 +49,3 @@ spec:
       - name: data
         persistentVolumeClaim:
           claimName: notebook
-
