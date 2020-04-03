@@ -118,7 +118,7 @@ kubectl rollout status deployment/notebook
 
 You can once again access the notebook using the URL:
 
-%ingress_protocol%://notebook-%session_namespace%.%ingress_domain%/
+http://notebook-%session_namespace%.%ingress_domain%/
 
 This time if you were to upload any notebooks or data files, they will be placed in the persistent volume, and would still be present if for any reason the container was shutdown and the Jupyter notebook application was restarted.
 
