@@ -80,8 +80,6 @@ spec:
           mountPath: /var/run/jupyter
         - name: data
           mountPath: /home/jovyan
-      securityContext:
-        fsGroup: 0
       volumes:
       - name: config
         configMap:
