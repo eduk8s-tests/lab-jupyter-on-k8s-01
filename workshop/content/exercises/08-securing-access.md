@@ -123,7 +123,7 @@ kubectl rollout status deployment/notebook
 
 When completed, access the notebook using the URL for the ingress route.
 
-http://notebook-%session_namespace%.%ingress_domain%/
+http://notebook-{{session_namespace}}.{{ingress_domain}}/
 
 This time you should be presented with a simple login prompt. As the password, enter:
 
