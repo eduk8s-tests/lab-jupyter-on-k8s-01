@@ -2,7 +2,7 @@ Running Jupyter notebooks on your own computer means having to have a Python lan
 
 Factors which make this complicated are the use of different operating systems, different Python language runtime versions, and different versions of the Jupyter notebook software and packages required by a specific Jupyter notebook.
 
-One solution which can help reduce the difficulty in ensuring that a group of people cooperating together have the same configuration, is to run Jupyter notebooks under a container runtime such as Docker or podman.
+One solution which can help reduce the difficulty in ensuring that a group of people cooperating together have the same configuration, is to run Jupyter notebooks under a container runtime such as docker or podman.
 
 When using a container runtime, the Jupyter notebook software is packaged up as a container image, with everything required to run the Jupyter notebook application pre-installed in the image. All that needs to be installed on the local computer is the container runtime. The host operating system does not need to have the Python language runtime or Jupyter notebook software installed.
 

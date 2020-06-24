@@ -3,7 +3,7 @@ When the Jupyter notebook application was installed and run locally, it was poss
 To view again what this configuration file looked like, run:
 
 ```execute
-cat .jupyter/jupyter_notebook_config.json
+cat $HOME/.jupyter/jupyter_notebook_config.json
 ```
 
 It should be similar to:
@@ -23,7 +23,7 @@ One way around the need to do this, is to incorporate the contents of the genera
 To create the ``ConfigMap`` resource, run:
 
 ```execute
-kubectl create configmap notebook --from-file=.jupyter/jupyter_notebook_config.json
+kubectl create configmap notebook --from-file=$HOME/.jupyter/jupyter_notebook_config.json
 ```
 
 This should output:
