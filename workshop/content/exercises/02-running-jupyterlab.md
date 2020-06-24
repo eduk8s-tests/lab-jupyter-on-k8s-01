@@ -16,7 +16,7 @@ Click on the URL again to bring up the JupyterLab interface.
 
 {{ingress_protocol}}://{{session_namespace}}-local-8888.{{ingress_domain}}/
 
-You shouldn't be asked to log in this time, but only because we are using the same URL and the new process has inherited the session cookie file that was previously written when we ran it previously with the classic interface.
+You shouldn't be asked to log in this time, but only because we are using the same URL and the new process has inherited the session cookie file that was previously written when we ran it with the classic interface.
 
 ![JupyterLab Interface](notebook-jupyterlab.png)
 

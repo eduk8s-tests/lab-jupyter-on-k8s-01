@@ -3,13 +3,13 @@ The typical way that Jupyter notebooks would be run is to run them directly on y
 If following best practice, you would first create a Python virtual environment in which to install the Jupyter notebook software. To do this, run:
 
 ```execute
-python3 -m venv jupyter
+python3 -m venv ~/jupyter-venv
 ```
 
 Having created the Python virtual environment, activate it so the Python runtime from the Python virtual environment is used.
 
 ```execute
-source jupyter/bin/activate
+source ~/jupyter-venv/bin/activate
 ```
 
 Before installing the Jupyter notebook software, ensure the latest version of ``pip`` is installed into the Python virtual environment by running:
@@ -46,17 +46,17 @@ and then to verify it, again enter:
 jupyter
 ```
 
-This will update the file ``.jupyter/jupyter_notebook_config.json`` with a hash of the credentials. You can view the contents of the file by running:
+This will update the file ``~/.jupyter/jupyter_notebook_config.json`` with a hash of the credentials. You can view the contents of the file by running:
 
 ```execute
-cat .jupyter/jupyter_notebook_config.json
+cat ~/.jupyter/jupyter_notebook_config.json
 ```
 
 You can now start up the Jupyter notebook application by running:
 
 
 ```execute
-jupyter notebook --ip 0.0.0.0
+jupyter notebook --ip 0.0.0.0 --port 8888
 ```
 
 Note that because this workshop environment is running in Kubernetes, the argument ``--ip 0.0.0.0`` has been supplied. This is so the Jupyter notebook application can be accessed from outside of the Kubernetes cluster. If you ran the Jupyter notebook application on your own local computer you would not use this option, and instead let it default to using an IP for connections of ``127.0.0.1``. When ``127.0.0.1`` is used, it ensures that it is only accessible to you on your own local computer and not anyone else.
