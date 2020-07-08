@@ -9,7 +9,7 @@ spec:
   url: https://github.com/jupyter-on-kubernetes/lab-jupyter-on-k8s-01
   content:
     files: github.com/jupyter-on-kubernetes/lab-jupyter-on-k8s-01
-  duration: 30m
+  duration: 45m
   session:
     budget: large
     applications:
