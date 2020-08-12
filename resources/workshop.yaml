@@ -11,7 +11,8 @@ spec:
     files: github.com/jupyter-on-kubernetes/lab-jupyter-on-k8s-01
   duration: 45m
   session:
-    budget: large
+    namespaces:
+      budget: large
     applications:
       console:
         enabled: true
