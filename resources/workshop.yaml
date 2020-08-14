@@ -19,6 +19,8 @@ spec:
       terminal:
         enabled: true
         layout: split
+      editor:
+        enabled: true
     ingresses:
     - name: local-8888
       port: 8888

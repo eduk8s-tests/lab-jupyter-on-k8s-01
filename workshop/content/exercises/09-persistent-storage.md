@@ -6,8 +6,8 @@ To use a persistent volume, it is necessary to create a ``PersistentVolumeClaim`
 
 To view the details of this resource run:
 
-```execute
-cat notebook-v3/persistentvolumeclaim.yaml
+```terminal:execute
+command: cat notebook-v3/persistentvolumeclaim.yaml
 ```
 
 The output should be:
@@ -29,8 +29,8 @@ This needs to be mounted into the container, so the deployment needs to be updat
 
 To see the update deployment configuration run:
 
-```execute
-cat notebook-v3/deployment.yaml
+```terminal:execute
+command: cat notebook-v3/deployment.yaml
 ```
 
 The output should be:
@@ -95,8 +95,8 @@ Because the existing volume mount for the config map conflicted with where the v
 
 To apply the updated configuration run:
 
-```execute
-kubectl apply -f notebook-v3
+```terminal:execute
+command: kubectl apply -f notebook-v3
 ```
 
 The output should be:
@@ -110,8 +110,8 @@ service/notebook unchanged
 
 Monitor the deployment to ensure it has completed by running:
 
-```execute
-kubectl rollout status deployment/notebook
+```terminal:execute
+command: kubectl rollout status deployment/notebook
 ```
 
 You can once again access the notebook using the URL:

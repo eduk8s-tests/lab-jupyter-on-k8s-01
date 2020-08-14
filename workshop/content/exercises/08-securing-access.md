@@ -2,8 +2,8 @@ When the Jupyter notebook application was installed and run locally, it was poss
 
 To view again what this configuration file looked like, run:
 
-```execute
-cat $HOME/.jupyter/jupyter_notebook_config.json
+```terminal:execute
+command: cat $HOME/.jupyter/jupyter_notebook_config.json
 ```
 
 It should be similar to:
@@ -22,8 +22,8 @@ One way around the need to do this, is to incorporate the contents of the genera
 
 To create the ``ConfigMap`` resource, run:
 
-```execute
-kubectl create configmap notebook --from-file=$HOME/.jupyter/jupyter_notebook_config.json
+```terminal:execute
+command: kubectl create configmap notebook --from-file=$HOME/.jupyter/jupyter_notebook_config.json
 ```
 
 This should output:
@@ -34,8 +34,8 @@ configmap/notebook created
 
 To query back what the resource looked like that was created, run:
 
-```execute
-kubectl get configmap/notebook -o yaml
+```terminal:execute
+command: kubectl get configmap/notebook -o yaml
 ```
 
 This should yield a resource definition which incorporates the following:
@@ -58,8 +58,8 @@ To have this mounted into the container of the Jupyter notebook application, we 
 
 To view the updated deployment configuration, run:
 
-```execute
-cat notebook-v2/deployment.yaml
+```terminal:execute
+command: cat notebook-v2/deployment.yaml
 ```
 
 This should yield:
@@ -111,14 +111,14 @@ The difference is the declaration of the config map as a volume that can be moun
 
 Deploy the Jupyter notebook application using this new configuration by running:
 
-```execute
-kubectl apply -f notebook-v2
+```terminal:execute
+command: kubectl apply -f notebook-v2
 ```
 
 Monitor the deployment to ensure it has completed by running:
 
-```execute
-kubectl rollout status deployment/notebook
+```terminal:execute
+command: kubectl rollout status deployment/notebook
 ```
 
 When completed, access the notebook using the URL for the ingress route.
@@ -127,8 +127,8 @@ http://notebook-{{session_namespace}}.{{ingress_domain}}/
 
 This time you should be presented with a simple login prompt. As the password, enter:
 
-```copy
-jupyter
+```workshop:copy
+text: jupyter
 ```
 
 Still a bit fiddly to setup, but at least we can now access the Jupyter notebook by a URL and use a normal password.

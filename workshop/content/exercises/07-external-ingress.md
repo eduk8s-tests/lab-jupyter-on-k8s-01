@@ -4,8 +4,8 @@ The purpose of the ``Service`` resource is to describe how the application can b
 
 To view the details of the service, run:
 
-```execute
-cat notebook-v1/service.yaml
+```terminal:execute
+command: cat notebook-v1/service.yaml
 ```
 
 This should yield:
@@ -30,8 +30,8 @@ spec:
 
 To view the details of the ingress, run:
 
-```execute
-cat notebook-v1/ingress.yaml
+```terminal:execute
+command: cat notebook-v1/ingress.yaml
 ```
 
 This should yield:
@@ -56,8 +56,8 @@ spec:
 
 To have the resources created, run:
 
-```execute
-kubectl apply -f notebook-v1
+```terminal:execute
+command: kubectl apply -f notebook-v1
 ```
 
 The output should be:
@@ -76,6 +76,6 @@ http://notebook-{{session_namespace}}.{{ingress_domain}}/
 
 If you click on this, you will find though that we still need to be able to retrieve the access token to supply it on the login page. So we still have more work to do to make this more usable. For now, delete the Jupyter notebook application by running:
 
-```execute
-kubectl delete all,ingress -l app=notebook
+```terminal:execute
+command: kubectl delete all,ingress -l app=notebook
 ```

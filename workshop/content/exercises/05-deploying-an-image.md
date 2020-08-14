@@ -2,8 +2,8 @@ The Jupyter notebook application image we want to deploy is the ``jupyter/minima
 
 To see the definition of this resource, run:
 
-```execute
-cat notebook-v1/deployment.yaml
+```terminal:execute
+command: cat notebook-v1/deployment.yaml
 ```
 
 This should yield:
@@ -48,8 +48,8 @@ In short, it says to run the required container image giving it 512Mi of memory,
 
 To load this resource definition into Kubernetes, run the command:
 
-```execute
-kubectl apply -f notebook-v1/deployment.yaml
+```terminal:execute
+command: kubectl apply -f notebook-v1/deployment.yaml
 ```
 
 The output should be:
@@ -62,16 +62,16 @@ This indicates that the resource definition was accepted. Kubernetes will now go
 
 To monitor the deployment so you know when it has completed, run:
 
-```execute
-kubectl rollout status deployment/notebook
+```terminal:execute
+command: kubectl rollout status deployment/notebook
 ```
 
 If this is the first time the container image is being used in the Kubernetes cluster, because the Jupyter notebook images can be quite large, it may take some time to pull down the image and deploy it.
 
 Although we only created a ``Deployment`` resource, under the cover this results in the creation of additional resources. To see all the resources that currently exist for the deployment, run:
 
-```execute
-kubectl get all
+```terminal: execute
+command: kubectl get all
 ```
 
 This should shield output similar to:
@@ -91,8 +91,8 @@ The ``ReplicaSet`` resource is created as a side effect of the ``Deployment`` re
 
 If we query just the pod, but request additional details by running:
 
-```execute
-kubectl get pods -o wide
+```terminal:execute
+command: kubectl get pods -o wide
 ```
 
 we will get output similar to:

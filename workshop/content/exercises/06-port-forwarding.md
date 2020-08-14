@@ -1,7 +1,8 @@
 Where only a ``Deployment`` has been created, the only way to access the Jupyter notebook instance outside of the Kubernetes cluster is by using port forwarding. To set up port forwarding, run the command:
 
-```execute-1
-kubectl port-forward deployment/notebook 8888:8888
+```terminal:execute
+command: kubectl port-forward deployment/notebook 8888:8888
+session: 1
 ```
 
 It will generate the output:
@@ -28,8 +29,9 @@ In order to work out what the access token is, we either have to look at the con
 
 To view the logs for the Jupyter notebook application, run:
 
-```execute-2
-kubectl logs deployment/notebook
+```terminal:execute
+command: kubectl logs deployment/notebook
+session: 2
 ```
 
 You should see a section in the logs similar to:
@@ -46,8 +48,9 @@ To login to the Jupyter notebook application you would need to copy the access t
 
 Instead of looking at the container logs, you can instead run:
 
-```execute-2
-kubectl exec deployment/notebook jupyter notebook list
+```terminal:execute
+command: kubectl exec deployment/notebook jupyter notebook list
+session: 2
 ```
 
 This will display a list similar to:
@@ -63,6 +66,5 @@ Having to work out what the access token is using either of these methods is not
 
 Before we continue and look at solutions for improving on this, shutdown the port forwarding by running:
 
-```execute-1
-<ctrl-c>
+```terminal:interrupt
 ```
