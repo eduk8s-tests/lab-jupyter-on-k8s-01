@@ -29,6 +29,6 @@ When you are done trying out the JupyterLab interface, kill the Jupyter notebook
 
 You will be prompted if you want to shutdown the application so confirm that you do using:
 
-```terminal:execute
-command: y
+```terminal:input
+text: y
 ```

@@ -36,14 +36,14 @@ command: jupyter notebook password
 
 This will prompt you to enter the password and then confirm it. Enter:
 
-```terminal:execute
-command: jupyter
+```terminal:input
+text: jupyter
 ```
 
 and then to verify it, again enter:
 
-```terminal:execute
-command: jupyter
+```terminal:input
+text: jupyter
 ```
 
 This will update the file ``$HOME/.jupyter/jupyter_notebook_config.json`` with a hash of the credentials. You can view the contents of the file by running:
@@ -76,8 +76,8 @@ Once you have verified the notebook application is working come back to these in
 
 You will be prompted if you want to shutdown the application so confirm that you do using:
 
-```terminal:execute
-command: y
+```terminal:input
+text: y
 ```
 
 Note that you will only get 5 seconds to confirm shutdown, so if you aren't quick enough, repeat the process of killing the application.
