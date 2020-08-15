@@ -63,7 +63,9 @@ Note that because this workshop environment is running in Kubernetes, the argume
 
 If you were running this command on your own local computer, your web browser would be automatically opened on the Jupyter notebook for you. As we are running the Jupyter notebook application in this hosted workshop environment, you will instead need to use the following URL to access it.
 
-{{ingress_protocol}}://{{session_namespace}}-local-8888.{{ingress_domain}}/
+```workshop:open-url
+url: {{ingress_protocol}}://{{session_namespace}}-local-8888.{{ingress_domain}}/
+```
 
 Clicking on this URL should bring up a new browser window or tab. Log into the notebook using the password supplied above. You should see the file browser view of the Jupyter notebook application. The files and sub directories in the directory where you started the Jupyter notebook application will be visible.
 
