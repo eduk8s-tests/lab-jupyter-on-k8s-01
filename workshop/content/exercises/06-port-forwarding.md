@@ -49,7 +49,7 @@ To login to the Jupyter notebook application you would need to copy the access t
 Instead of looking at the container logs, you can instead run:
 
 ```terminal:execute
-command: kubectl exec deployment/notebook jupyter notebook list
+command: kubectl exec deployment/notebook -- jupyter notebook list
 session: 2
 ```
 
