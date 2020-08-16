@@ -28,7 +28,7 @@ A version of the Jupyter notebook software was not specified when performing the
 
 Although we aren't worrying about what versions of packages are installed here, in your own environments it is always recommended to track what versions you are installing so you can reproduce the environment later if need be.
 
-When the the Jupyter notebook application is run, access will be gated using a password or access token. To set the password in advance so it is known, run:
+When the Jupyter notebook application is run, access will be gated using a password or access token. To set the password in advance so it is known, run:
 
 ```terminal:execute
 command: jupyter notebook password
