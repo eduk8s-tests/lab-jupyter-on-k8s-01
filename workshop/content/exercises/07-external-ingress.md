@@ -72,7 +72,7 @@ Because we applied all the configuration in the ``notebook-v1`` directory, the c
 
 With the service and ingress created, the Jupyter notebook application can now be accessed without needing to use port forwarding. In this case the URL will be:
 
-```workshop:open-url
+```dashboard:open-url
 url: http://notebook-{{session_namespace}}.{{ingress_domain}}/
 ```
 

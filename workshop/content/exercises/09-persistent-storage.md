@@ -116,7 +116,7 @@ command: kubectl rollout status deployment/notebook
 
 You can once again access the notebook using the URL:
 
-```workshop:open-url
+```dashboard:open-url
 url: http://notebook-{{session_namespace}}.{{ingress_domain}}/
 ```
 

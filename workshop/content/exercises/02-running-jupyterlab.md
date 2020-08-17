@@ -14,7 +14,7 @@ command: jupyter lab --ip 0.0.0.0 --port 8888
 
 Click on the URL again to bring up the JupyterLab interface.
 
-```workshop:open-url
+```dashboard:open-url
 url: {{ingress_protocol}}://{{session_namespace}}-local-8888.{{ingress_domain}}/
 ```
 
