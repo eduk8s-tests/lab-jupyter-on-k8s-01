@@ -63,7 +63,7 @@ Note that because this workshop environment is running in Kubernetes, the argume
 
 If you were running this command on your own local computer, your web browser would be automatically opened on the Jupyter notebook for you. As we are running the Jupyter notebook application in this hosted workshop environment, you will instead need to use the following URL to access it.
 
-```dashbord:open-url
+```dashboard:open-url
 url: {{ingress_protocol}}://{{session_namespace}}-local-8888.{{ingress_domain}}/
 ```
 
