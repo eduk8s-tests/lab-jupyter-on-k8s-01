@@ -70,7 +70,7 @@ If this is the first time the container image is being used in the Kubernetes cl
 
 Although we only created a ``Deployment`` resource, under the cover this results in the creation of additional resources. To see all the resources that currently exist for the deployment, run:
 
-```terminal: execute
+```terminal:execute
 command: kubectl get all
 ```
 

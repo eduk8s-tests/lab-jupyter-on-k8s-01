@@ -17,7 +17,9 @@ If this were being run on your own local computer, you could then access the Jup
 
 As we are running the Jupyter notebook application in this hosted workshop environment, you will instead need to again use the following URL to access it.
 
-{{ingress_protocol}}://{{session_namespace}}-local-8888.{{ingress_domain}}/
+```dashboard:open-url
+url: {{ingress_protocol}}://{{session_namespace}}-local-8888.{{ingress_domain}}/
+```
 
 Clicking on this URL to access the web interface for the Jupyter notebook, you will see that what it displays this time is quite different.
 
