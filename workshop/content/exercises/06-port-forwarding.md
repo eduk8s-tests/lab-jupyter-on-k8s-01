@@ -48,21 +48,23 @@ Or copy and paste one of these URLs:
 
 To login to the Jupyter notebook application you would need to copy the access token shown in the logs and use it with the login page.
 
-Instead of looking at the container logs, you can instead run:
+Instead of looking at the container logs, you could instead run the ``jupyter notebook list`` where the Jupyter notebook application is running:
 
 ```terminal:execute
 command: kubectl exec deployment/notebook -- jupyter notebook list
 session: 2
 ```
 
-This will display a list similar to:
+This should display a list similar to:
 
 ```
 Currently running servers:
 http://0.0.0.0:8888/?token=68c199acba9a8feea241c15e156f00f0d788608355cda8a0 :: /home/jovyan
 ```
 
-Again, you would need to copy the access token for use with the login page.
+For reasons unknown, this ability doesn't seem to always work correctly when running the Jupyter notebook application container image.
+
+Either way, you need to copy the access token for use with the login page.
 
 Having to work out what the access token is using either of these methods is not particularly convenient, nor is the need to setup port forwarding each time you need to access the Jupyter notebook.
 
