@@ -3,7 +3,7 @@ kind: Workshop
 metadata:
   name: lab-jupyter-on-k8s-01
 spec:
-  title: Kubernetes Fundamentals
+  title: "Jupyter on Kubernetes #1"
   description: A workshop exploring deployment of Jupyter notebooks locally and to Kubernetes.
   workshop:
     files:
