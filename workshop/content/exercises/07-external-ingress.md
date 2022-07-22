@@ -37,21 +37,26 @@ command: cat notebook-v1/ingress.yaml
 This should yield:
 
 ```
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: notebook
   labels:
     app: notebook
+  annotations:
+    projectcontour.io/websocket-routes: /
 spec:
   rules:
   - host: notebook-{{session_namespace}}.{{ingress_domain}}
     http:
       paths:
-      - backend:
-          serviceName: notebook
-          servicePort: 8888
-        path: /
+      - path: "/"
+        pathType: Prefix
+        backend:
+          service:
+            name: notebook
+            port:
+              number: 8888
 ```
 
 To have the resources created, run:

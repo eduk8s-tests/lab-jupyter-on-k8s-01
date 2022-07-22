@@ -3,27 +3,27 @@ When the Jupyter notebook application was installed and run locally, it was poss
 To view again what this configuration file looked like, run:
 
 ```terminal:execute
-command: cat $HOME/.jupyter/jupyter_notebook_config.json
+command: cat $HOME/.jupyter/jupyter_server_config.json
 ```
 
 It should be similar to:
 
 ```
 {
-  "NotebookApp": {
-    "password": "sha1:cc569d299e95:c60dcd2ed070f2054c992b24f7ec6b2bf19d4762"
+  "ServerApp": {
+    "password": "argon2:$argon2id$v=19$m=10240,t=10,p=8$OCz4NRN9RNJQqPKQCx5OyQ$YogG0k+sxOe8LohqEzAQuUS/voP1xQY5aTH2oNG/LGs"
   }
 }
 ```
 
 When a container was used for deployment, it was instead necessary to use an access token. The value of this access token wasn't known in advance, and needed to be extracted from the logs for the Jupyter notebook application. Alternatively, you needed to access the container to query the running Jupyter notebook application and list the access token.
 
-One way around the need to do this, is to incorporate the contents of the generated config file ``jupyter_notebook_config.json`` into a Kubernetes resource called a ``ConfigMap``. This resource can then be mounted into the container for the Jupyter notebook application as a file at the required location.
+One way around the need to do this, is to incorporate the contents of the generated config file ``jupyter_server_config.json`` into a Kubernetes resource called a ``ConfigMap``. This resource can then be mounted into the container for the Jupyter notebook application as a file at the required location.
 
 To create the ``ConfigMap`` resource, run:
 
 ```terminal:execute
-command: kubectl create configmap notebook --from-file=$HOME/.jupyter/jupyter_notebook_config.json
+command: kubectl create configmap notebook --from-file=$HOME/.jupyter/jupyter_server_config.json
 ```
 
 This should output:
@@ -46,10 +46,10 @@ kind: ConfigMap
 metadata:
   name: notebook
 data:
-  jupyter_notebook_config.json: |-
+  jupyter_server_config.json: |-
     {
-      "NotebookApp": {
-        "password": "sha1:cc569d299e95:c60dcd2ed070f2054c992b24f7ec6b2bf19d4762"
+      "ServerApp": {
+        "password": "argon2:$argon2id$v=19$m=10240,t=10,p=8$OCz4NRN9RNJQqPKQCx5OyQ$YogG0k+sxOe8LohqEzAQuUS/voP1xQY5aTH2oNG/LGs"
       }
     }
 ```

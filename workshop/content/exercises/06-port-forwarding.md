@@ -18,7 +18,7 @@ If this were being run on your own local computer, you could then access the Jup
 As we are running the Jupyter notebook application in this hosted workshop environment, you will instead need to again use the following URL to access it.
 
 ```dashboard:open-url
-url: {{ingress_protocol}}://{{session_namespace}}-local-8888.{{ingress_domain}}/
+url: {{ingress_protocol}}://local-8888-{{session_namespace}}.{{ingress_domain}}/
 ```
 
 Clicking on this URL to access the web interface for the Jupyter notebook, you will see that what it displays this time is quite different.
@@ -48,10 +48,10 @@ Or copy and paste one of these URLs:
 
 To login to the Jupyter notebook application you would need to copy the access token shown in the logs and use it with the login page.
 
-Instead of looking at the container logs, you could instead run the ``jupyter notebook list`` where the Jupyter notebook application is running:
+Instead of looking at the container logs, you could instead run the ``jupyter server list`` where the Jupyter notebook application is running:
 
 ```terminal:execute
-command: kubectl exec deployment/notebook -- jupyter notebook list
+command: kubectl exec deployment/notebook -- jupyter server list
 session: 2
 ```
 
@@ -62,9 +62,7 @@ Currently running servers:
 http://0.0.0.0:8888/?token=68c199acba9a8feea241c15e156f00f0d788608355cda8a0 :: /home/jovyan
 ```
 
-For reasons unknown, this ability doesn't seem to always work correctly when running the Jupyter notebook application container image.
-
-Either way, you need to copy the access token for use with the login page.
+As before, you would copy the access token for use with the login page.
 
 Having to work out what the access token is using either of these methods is not particularly convenient, nor is the need to setup port forwarding each time you need to access the Jupyter notebook.
 
