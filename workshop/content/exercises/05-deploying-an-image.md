@@ -39,12 +39,9 @@ spec:
             memory: 512Mi
           requests:
             memory: 512Mi
-        env:
-        - name: JUPYTER_ENABLE_LAB
-          value: "true"
 ```
 
-In short, it says to run the required container image giving it 512Mi of memory, and run only one instance of the notebook. The use of the JupyterLab interface has also been enabled.
+In short, it says to run the required container image giving it 512Mi of memory, and run only one instance of the notebook. The Jupyter notebook images are setup to use the JupyterLab interface.
 
 To load this resource definition into Kubernetes, run the command:
 

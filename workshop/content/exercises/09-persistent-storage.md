@@ -72,9 +72,6 @@ spec:
             memory: 512Mi
           requests:
             memory: 512Mi
-        env:
-        - name: JUPYTER_ENABLE_LAB
-          value: "true"
         volumeMounts:
         - name: config
           mountPath: /var/run/jupyter
