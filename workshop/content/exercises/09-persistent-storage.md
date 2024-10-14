@@ -77,6 +77,9 @@ spec:
           mountPath: /var/run/jupyter
         - name: data
           mountPath: /home/jovyan
+      securityContext:
+        runAsUser: 1000
+        fsGroup: 100
       volumes:
       - name: config
         configMap:
