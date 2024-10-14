@@ -5,10 +5,12 @@ metadata:
 spec:
   title: "Jupyter on Kubernetes #1"
   description: A workshop exploring deployment of Jupyter notebooks locally and to Kubernetes.
+  publish:
+    image: $(image_repository)/lab-jupyter-on-k8s-01-files:$(workshop_version)
   workshop:
     files:
     - image:
-        url: $(image_repository)/lab-jupyter-on-k8s-01-files:latest
+        url: $(image_repository)/lab-jupyter-on-k8s-01-files:$(workshop_version)
       includePaths:
       - /workshop/**
       - /exercises/**

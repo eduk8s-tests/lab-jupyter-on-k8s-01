@@ -46,10 +46,10 @@ and then to verify it, again enter:
 text: jupyter
 ```
 
-This will update the file ``$HOME/.jupyter/jupyter_notebook_config.json`` with a hash of the credentials. You can view the contents of the file by running:
+This will update the file ``$HOME/.jupyter/jupyter_server_config.json`` with a hash of the credentials. You can view the contents of the file by running:
 
 ```terminal:execute
-command: cat $HOME/.jupyter/jupyter_notebook_config.json
+command: cat $HOME/.jupyter/jupyter_server_config.json
 ```
 
 You can now start up the Jupyter notebook application by running:

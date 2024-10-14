@@ -6,30 +6,6 @@ To use the JupyterLab interface, you first need to install it, as it is not bund
 command: pip install jupyterlab
 ```
 
-JupyterLab uses a different configuration file from the classic Jupyter notebook. To set the password for JupyterLab you will instead need to run:
-
-```terminal:execute
-command: jupyter server password
-```
-
-This will prompt you to enter the password and then confirm it. Enter:
-
-```terminal:input
-text: jupyter
-```
-
-and then to verify it, again enter:
-
-```terminal:input
-text: jupyter
-```
-
-This will update the file ``$HOME/.jupyter/jupyter_server_config.json`` with a hash of the credentials. You can view the contents of the file by running:
-
-```terminal:execute
-command: cat $HOME/.jupyter/jupyter_server_config.json
-```
-
 You can now start up the Jupyter notebook again, but this time using the JupyterLab interface, by running:
 
 ```terminal:execute
@@ -42,7 +18,7 @@ Click on the URL again to bring up the JupyterLab interface.
 url: {{ingress_protocol}}://local-8888-{{session_namespace}}.{{ingress_domain}}/
 ```
 
-Login using the same credentials as before.
+Because you already logged in using the classic interface you shouldn't need to login again, however if prompted to login again use the same credentials as before.
 
 ![JupyterLab Interface](notebook-jupyterlab.png)
 
