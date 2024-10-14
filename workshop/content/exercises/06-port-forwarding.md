@@ -39,7 +39,7 @@ session: 2
 You should see a section in the logs similar to:
 
 ```
-To access the notebook, open this file in a browser:
+To access the server, open this file in a browser:
     file:///home/jovyan/.local/share/jupyter/runtime/nbserver-7-open.html
 Or copy and paste one of these URLs:
     http://notebook-5474d74498-ktcv6:8888/?token=68c199acba9a8feea241c15e156f00f0d788608355cda8a0

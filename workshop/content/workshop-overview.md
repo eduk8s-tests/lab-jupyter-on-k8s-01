@@ -1,4 +1,4 @@
-The [Project Jupyter](https://jupyter.org/) web site describes Jupyter notebooks as:
+Jupyter notebooks can be loosely described as being:
 
 > an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
 
